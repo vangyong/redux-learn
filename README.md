@@ -8,4 +8,7 @@
 3、安装react-redux
     npm install react-redux --save
 
+4、运行启动
+    npm start
+
 参考：https://segmentfault.com/a/1190000015684895
