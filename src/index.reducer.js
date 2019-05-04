@@ -1,12 +1,12 @@
 const tiger = 10000
 
 //这是action
-const increase = {
-    type: '涨工资'
-}
-const decrease = {
-    type: '扣工资'
-}
+// const increase = {
+//     type: '涨工资'
+// }
+// const decrease = {
+//     type: '扣工资'
+// }
 //这是reducer
 const reducer = (state = tiger, action) => {
     switch (action.type) {
