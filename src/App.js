@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Snowflake} from 'node-snowflake'
+
+
 
 class App extends Component {
 
@@ -9,11 +12,19 @@ class App extends Component {
 
     render() {
         const {PayIncrease, PayDecrease} = this.props;
+        let id = Snowflake.nextId()
+        console.log(typeof id)
         return (
             <div className="App">
                 <h2>当月工资为{this.props.tiger}</h2>
                 <button onClick={PayIncrease}>升职加薪</button>
                 <button onClick={PayDecrease}>迟到罚款</button>
+                <br/>
+                <view>
+                    测试id:{id}
+
+                </view>
+
             </div>
         );
     }
