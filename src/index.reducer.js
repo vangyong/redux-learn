@@ -7,6 +7,7 @@ const tiger = 10000
 // const decrease = {
 //     type: '扣工资'
 // }
+
 //这是reducer
 const reducer = (state = tiger, action) => {
     switch (action.type) {

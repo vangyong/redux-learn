@@ -2,10 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Snowflake} from 'node-snowflake'
 
-
-
 class App extends Component {
-
     componentDidMount() {
         console.log(this.props)
     }
@@ -20,11 +17,9 @@ class App extends Component {
                 <button onClick={PayIncrease}>升职加薪</button>
                 <button onClick={PayDecrease}>迟到罚款</button>
                 <br/>
-                <view>
+                <div>
                     测试id:{id}
-
-                </view>
-
+                </div>
             </div>
         );
     }
